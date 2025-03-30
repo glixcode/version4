@@ -11,3 +11,9 @@ app.listen(PORT,() => {
     console.log("hello world");
 })
 
+app.get('/',(request, response)=> {
+
+    response.status(200).json({success: true})
+
+})
+
